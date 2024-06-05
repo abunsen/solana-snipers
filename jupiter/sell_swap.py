@@ -48,7 +48,7 @@ def sell(ctx, payer, TOKEN_TO_SWAP_SELL, config):
             print("Token Balance [Lamports]: ",tokenBalanceLamports)
             print("3. Get Route for swap...")
 
-            quote_response = requests.get('https://quote-api.jup.ag/v6/quote', params={
+            quote_response = requests.get(config.get("JUPITER", "BASE_URL") + '/quote', params={
                 'inputMint': TOKEN_TO_SWAP_SELL,
                 'outputMint': 'So11111111111111111111111111111111111111112',
                 'amount': tokenBalanceLamports,
@@ -57,7 +57,7 @@ def sell(ctx, payer, TOKEN_TO_SWAP_SELL, config):
 # ========================================================================================================
             print("4. Get the serialized transactions to perform the swap...")
             # Get the serialized transactions to perform the swap
-            url = "https://quote-api.jup.ag/v6/swap"
+            url = config.get("JUPITER", "BASE_URL") + "/swap"
             payload = json.dumps({
             "userPublicKey": str(payer.pubkey()),
             "wrapAndUnwrapSol": True,

@@ -26,7 +26,7 @@ def buy(payer, ctx, amount_of_sol_to_swap, TOKEN_TO_SWAP_BUY, config):
             # Swap Info
             print("3. Get Route for swap...")
 
-            quote_response = requests.get('https://quote-api.jup.ag/v6/quote', params={
+            quote_response = requests.get(config.get("JUPITER", "BASE_URL") + '/quote', params={
                 'inputMint': 'So11111111111111111111111111111111111111112',
                 'outputMint': TOKEN_TO_SWAP_BUY,
                 'amount': amount_of_sol_to_swap,
@@ -45,7 +45,7 @@ def buy(payer, ctx, amount_of_sol_to_swap, TOKEN_TO_SWAP_BUY, config):
 # ========================================================================================================
             print("4. Get the serialized transactions to perform the swap...")
             # Get the serialized transactions to perform the swap
-            url = "https://quote-api.jup.ag/v6/swap"
+            url = config.get("JUPITER", "BASE_URL") + "/swap"
             payload = json.dumps({
             "userPublicKey": str(payer.pubkey()),
             "wrapAndUnwrapSol": True,

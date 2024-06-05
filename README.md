@@ -19,6 +19,7 @@ To use the Solana Sniper, you will need the following:
 - Discord Webhook urls.
 - Telegram bot api keys.
 - Solana RPC Provider's HTTPS URL
+- Jupiter SWAP API HTTPS URL
 - Kokiez API key (PAID) - It is used in this open source project to fetch pool info (This key is not your one way ticket to become a millionaire, a proof is given in the video of how I got rugged while sniping new pools naively!)
 
 ## Getting Started
@@ -28,7 +29,7 @@ To use the Solana Sniper, you will need the following:
     git clone https://github.com/kokiez/solana-sniper.git
     cd solana-sniper
     ```
-2. Watch the [Video](https://www.youtube.com/watch?v=ZXS4OGUE17k) or Read it here in detail, [Click me](https://github.com/kokiez/solana-sniper/blob/main/guide.md)
+2. Watch the [Video](https://www.youtube.com/watch?v=ZXS4OGUE17k) or Read it here in detail, [Click me](./blob/main/guide.md)
 - Note: Currently, the sniper is set to check for "new pool" and a solscan.com/tx/blabla url in a new message to snipe new pools... but you can change it to your liking. Example:
    ```
    NEW POOL
@@ -85,3 +86,4 @@ Happy trading with the Solana Sniper!
 7) [https://michaelhly.com/solana-py/](https://michaelhly.com/solana-py/)
 8) [https://www.soldev.app/course/intro-to-reading-data](https://www.soldev.app/course/intro-to-reading-data)
 9) [https://kevinheavey.github.io/solders/index.html](https://kevinheavey.github.io/solders/index.html)
+10) [https://marketplace.quicknode.com/add-on/metis-jupiter-v6-swap-api](https://marketplace.quicknode.com/add-on/metis-jupiter-v6-swap-api)

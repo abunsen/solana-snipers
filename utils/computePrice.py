@@ -77,7 +77,7 @@ def getQuoteToken(TOKEN_TO_SWAP_SELL, tokenBalanceLamports):
 
         
         while True:
-            quote_response1 = requests.get('https://quote-api.jup.ag/v6/quote', params={
+            quote_response1 = requests.get(config.get("JUPITER", "BASE_URL") + '/quote', params={
                 'inputMint': TOKEN_TO_SWAP_SELL,
                 'outputMint': 'So11111111111111111111111111111111111111112',
                 'amount': tokenBalanceLamports,

@@ -39,7 +39,11 @@ I created an api, so everyone can fetch pool info at much faster rate. You can t
       2) 30$ for 30 days
 
 ## Section 7: RPC URL
-1. Goto [helius](https://helius.xyz/) and create your endpoint for solana. Copy the https url and add it to config.ini
+1. Goto [QuickNode](https://www.quicknode.com/) and create your endpoint for solana. Copy the https url and add it to config.ini
+2. Goto [helius](https://helius.xyz/) and create your endpoint for solana. Copy the https url and add it to config.ini
+
+## Section 8: Jupiter URL
+1. Goto [QuickNode](https://marketplace.quicknode.com/add-on/metis-jupiter-v6-swap-api) and add the Metis endpoint for solana. Sign into the metis dashboard and copy the https url and add it to config.ini
 
 ## Finally
 1. You can create a test channel using main telegram account, then join it with the one that is suppose to be in the solana sniper bot, and then add the username of channel to config.ini.
